@@ -1,0 +1,55 @@
+/*All paragraphs will have this style*/
+p {
+    font-family: "Comic Sans MS", Verdana, Arial;
+    color: black;
+}
+
+/*All body's will have this style*/
+body {
+    background-color: whitesmoke;
+}
+
+/*Main heading style*/
+#headerMain{
+    color: black;
+    font-family: "Comic Sans MS", Verdana, Arial;
+    font-align: center;
+}
+
+/*style of id 'para1' */
+#para1 {
+    font-align: center;
+    color: red;
+}
+
+/*class 'new input' location with buffering*/
+.inputWithBuffer {
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*class 'htmlarea' */
+.htmlarea {
+    background: #fff;
+    border: 1px solid #000000;
+}
+
+/*colors can be defined by rgb funciton, hex value, or name (140 possible)*/
+#para2 {
+    background-color: rgb(23,76,200);
+    color: #00FFFF;
+    border-color: purple;
+}
+
+button:hover{
+    text-decoration-color: red;
+    background-color: darkgrey;
+}
+
+/*a basic style for button*/
+#button{
+    margin: 10px;
+}
