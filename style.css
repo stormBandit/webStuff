@@ -37,6 +37,11 @@ body {
     border: 1px solid #000000;
 }
 
+/*header navigation bar*/
+.headerNavBar {
+    border: 1px solid black;
+}
+
 /*colors can be defined by rgb funciton, hex value, or name (140 possible)*/
 #para2 {
     background-color: rgb(23,76,200);
