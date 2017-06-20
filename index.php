@@ -29,18 +29,6 @@
             <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </section>
 
-        <section >
-            <article>
-                <p>John</p>
-            </article>
-            <article >
-                <p>Paul</p>
-            </article>
-            <article >
-                <p>Ringo</p>
-            </article>
-        </section>
-
         <footer>
             <a href="#facebook"> <i> Facebook</i> </a>
             <a href="#twitter"> <i>Twitter</i> </a>
