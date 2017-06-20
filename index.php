@@ -1,4 +1,4 @@
-<HTML>
+<HTML xmlns="http://www.w3.org/1999/html">
     <HEAD>
         <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8">
@@ -10,10 +10,12 @@
     <body>
 
         <nav class="headerNavBar">
-            <a href="#home">Home</a>
-            <a href="#band">Band</a>
-            <a href="#tour">Tour</a>
-            <a href="#contact">Contact</a>
+            <form action="index.php" method="post">
+                <button type="submit" formaction="/login.php" class="toolBarButton">Home</button>
+                <button formaction="#newsfeed" class="toolBarButton">Newsfeed</button>
+                <button formaction="#messages" class="toolBarButton">Messages</button>
+                <button formaction="#contacts" class="toolBarButton">Contacts</button>
+            </form>
         </nav>
 
         <section>

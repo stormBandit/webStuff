@@ -40,6 +40,22 @@ body {
 /*header navigation bar*/
 .headerNavBar {
     border: 1px solid black;
+    background-color: skyblue;
+    height: 36px;
+    text-align: right;
+}
+
+/*button in the toolbars*/
+.toolBarButton {
+    background-color: cyan;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.toolBarButton:hover{
+    text-decoration-color: darkblue;
+    background-color: lightblue;
 }
 
 /*colors can be defined by rgb funciton, hex value, or name (140 possible)*/
