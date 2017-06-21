@@ -10,12 +10,10 @@
     <body>
 
         <nav class="headerNavBar">
-            <form action="index.php" method="post">
-                <button type="submit" formaction="/login.php" class="toolBarButton">Home</button>
-                <button formaction="#newsfeed" class="toolBarButton">Newsfeed</button>
-                <button formaction="#messages" class="toolBarButton">Messages</button>
-                <button formaction="#contacts" class="toolBarButton">Contacts</button>
-            </form>
+            <div class="homeButton"> <form method="post" action="login.php"> <button type="submit" class="toolBarButton">Home</button> </div> </form>
+            <div class="newsfeedButton"> <form method="post"> <button formaction="#newsfeed" class="toolBarButton">Newsfeed</button> </div> </form>
+            <div> <form method="post"> <button formaction="#messages" class="toolBarButton">Messages</button> </div> </form>
+            <div> <form method="post"> <button formaction="#contacts" class="toolBarButton">Contacts</button> </div> </form>
         </nav>
 
         <section style="max-width:600px">
@@ -49,10 +47,13 @@
         </form>
 
         <footer>
-            <a href="#facebook"> <i> Facebook</i> </a>
-            <a href="#twitter"> <i>Twitter</i> </a>
-            <a href="#instagram"> <i>Instagram</i> </a>
-            <p> <i> Powered by </i> <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> </p>
+            <ul style="list-style-type: lower-greek; list-style-position: outside;">
+                <li> <a href="#facebook"> <i> Facebook</i> </a> </li>
+                <li> <a href="#twitter"> <i>Twitter</i> </a> </li>
+                <li> <a href="#instagram"> <i>Instagram</i> </a> </li>
+                <li> <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> </p> </li>
+            </ul>
+        </footer>
         </footer>
     </body>
 
