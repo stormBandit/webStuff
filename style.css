@@ -6,7 +6,22 @@ p {
 
 /*All body's will have this style*/
 body {
-    background-color: whitesmoke;
+    background-color: slategrey;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: skyblue;
+}
+
+/*when a link is clicked*/
+a:active {
+    color: black;
 }
 
 /*Main heading style*/
@@ -37,6 +52,27 @@ body {
     border: 1px solid #000000;
 }
 
+/*the main styling for important buttons*/
+.mainButton {
+    background-color: #00FFFF;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 10px;
+    /*icon: url("images/icons/mainButtonIcon.png");  */
+}
+
+.mainButton:hover {
+    color: lightblue;
+    border-color: lightblue;
+    background-color: blue;
+}
+
+.mainButton:active {
+    color: black;
+    background-color: red;
+    border-color: black;
+}
+
 /*header navigation bar*/
 .headerNavBar {
     border: 1px solid black;
@@ -51,9 +87,12 @@ body {
     border: 1px solid black;
     text-decoration: none;
     padding: 1em;
+    margin: 0px;
 }
 
 .toolBarButton:hover{
+    color: blue;
+    border: 2px solid blue;
     text-decoration-color: darkblue;
     background-color: lightblue;
 }
@@ -63,14 +102,4 @@ body {
     background-color: rgb(23,76,200);
     color: #00FFFF;
     border-color: purple;
-}
-
-button:hover{
-    text-decoration-color: red;
-    background-color: darkgrey;
-}
-
-/*a basic style for button*/
-#button{
-    margin: 10px;
 }

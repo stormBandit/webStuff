@@ -39,7 +39,7 @@
         </footer>
 
         <form method="post" action="login.php">
-            <button type="submit" id="button">Sign In / Register</button>
+            <button type="submit" class="mainButton">Sign In / Register</button>
         </form>
     </body>
 
