@@ -10,10 +10,12 @@
     <body>
 
         <nav class="headerNavBar">
-            <div class="homeButton"> <form method="post" action="login.php"> <button type="submit" class="toolBarButton">Home</button> </div> </form>
-            <div class="newsfeedButton"> <form method="post"> <button formaction="#newsfeed" class="toolBarButton">Newsfeed</button> </div> </form>
-            <div> <form method="post"> <button formaction="#messages" class="toolBarButton">Messages</button> </div> </form>
-            <div> <form method="post"> <button formaction="#contacts" class="toolBarButton">Contacts</button> </div> </form>
+            <div class="homeButton"> <form method="post" action="login.php"> <button type="submit" class="toolBarButton">Home</button> </form> </div>
+            <div class="mainToolBarButtons">
+                <form method="post"> <button formaction="#newsfeed" class="toolBarButton">Newsfeed</button> </form>
+                <form method="post"> <button formaction="#messages" class="toolBarButton">Messages</button> </form>
+                <form method="post"> <button formaction="#contacts" class="toolBarButton">Contacts</button> </form>
+            </div>
         </nav>
 
         <section style="max-width:600px">
