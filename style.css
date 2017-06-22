@@ -87,12 +87,6 @@ a:focus {
     border-radius: 10px;
 }
 
-.horizontal-container {
-    display: flex;
-    width: 300px;
-    flex-flow: row wrap;
-}
-
 /*button in the toolbars*/
 .toolBarButton {
     background-color: cyan;
