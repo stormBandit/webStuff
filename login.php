@@ -16,11 +16,9 @@
     <form method="post" action="login.php">
         <div>
             Username: <input type="text" id="username"> <br>
-            Password: <input type="text" id="password"> <br>
-            <button type="submit">Sign IN </button> <br>
+            Password: <input type="password" id="password"> <br>
+            <button type="submit" id="sign-in">Sign IN </button> <br>
         </div>
-
-
     </form>
 
     <div class="inputWithBuffer">
@@ -31,7 +29,11 @@
     <script>
         document.getElementById('register').onclick=function() {
             document.getElementById('register').style.backgroundColor = ('red');
-        }
+        };
+
+        document.getElementById('sign-in').onclick=function() {
+            prompt("This is a prompt");
+        };
     </script>
 
 </BODY>
