@@ -20,12 +20,19 @@
             <button type="submit">Sign IN </button> <br>
         </div>
 
-        <div class="inputWithBuffer">
-            Not a member? Sign-Up!
-            <button type="submit" id="register">Register</button>
-        </div>
+
     </form>
+
+    <div class="inputWithBuffer">
+        Not a member? Sign-Up!
+        <button type="submit" id="register">Register</button>
+    </div>
+
+    <script>
+        document.getElementById('register').onclick=function() {
+            document.getElementById('register').style.backgroundColor = ('red');
+        }
+    </script>
 
 </BODY>
 </HTML>
-
