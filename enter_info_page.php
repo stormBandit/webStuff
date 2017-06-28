@@ -16,6 +16,15 @@
         </div>
 
         <div class="inputWithBuffer">
+            Mr.<input type="radio" name="salutation" value="Mr. ">
+            Mrs.<input type="radio" name="salutation" value="Mrs. ">
+            Ms.<input type="radio" name="salutation" value="Ms. ">
+            Dr.<input type="radio" name="salutation" value="Dr. ">
+            Other<input type="radio" name="salutation" value="0" checked>
+            Prefer Not to disclose<input type="radio" name="salutation" value="0">
+        </div>
+
+        <div class="inputWithBuffer">
             Male<input type="radio" name="gender" value="m">
             Female<input type="radio" name="gender" value="f">
             Other<input type="radio" name="gender" value="o" checked="o">
