@@ -1,0 +1,54 @@
+version: '3.1'
+
+services:
+  web:
+    container_name: nginx_example
+    image: nginx:alpine
+    volumes:
+      - "./nginx/nginx.conf:/etc/nginx/nginx.conf"
+      - "./nginx/vhosts:/etc/nginx/conf.d/vhosts"
+      - "../source:/var/www/html"
+      - log-infra-nginx:/var/log/nginx/
+    ports:
+      - "8000:80"
+    depends_on:
+      - php
+  php:
+    container_name: php_example
+    build: php-fpm-debug/
+    volumes:
+      - "../source:/var/www/html"
+      - log-app:/var/log/myapp
+    environment:
+      - IS_LOCAL=YES
+      - PORT_FORWARD=8000
+#  scalyr:
+#    container_name: scalyr_example
+#    image: scalyr/scalyr-docker-agent
+#    volumes:
+#    - ./scalyr/agent.d:/etc/scalyr-agent-2/agent.d
+#    - /run/docker.sock:/var/scalyr/docker.sock
+#    - log-app:/var/log/myapp
+#    - log-infra-nginx:/var/log/nginx
+#    environment:
+#    - DOCKER_HOST_NAME=
+#    - DOCKER_TIER=dev
+#    - DOCKER_SYSTEM=
+  mysql:
+    container_name: mysql_example
+    image: mysql:5.7
+    command: mysqld --sql_mode=""
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    ports:
+    - "3306:3306"
+    volumes:
+    - mysql_data:/var/lib/mysql/
+    - "./mysql/data:/docker-entrypoint-initdb.d"
+    - "./mysql/config:/etc/mysql/conf.d"
+volumes:
+  log-app: ~
+  log-infra-nginx: ~
+  mysql_data: ~
+
+
