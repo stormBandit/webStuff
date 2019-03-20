@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <HTML xmlns="http://www.w3.org/1999/html", lang="en">
     <HEAD>
-        <link rel="stylesheet" href="css/bootstrap*">
-        <link rel="stylesheet" href="css/style.css"
+        <link rel="stylesheet" href="/global/css/bootstrap*">
+        <link rel="stylesheet" href="/global/css/style.css"
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </HEAD>
