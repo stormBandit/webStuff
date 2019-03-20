@@ -1,1 +1,4 @@
+/nbproject
 .idea/
+source/global/credStore/clsCredStore.php
+*.log
