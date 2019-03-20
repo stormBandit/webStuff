@@ -1,0 +1,8 @@
+<?php
+
+class clsCredStore
+{
+	const DATABASE_HOST = "";
+	const DATABASE_USER ="";
+	const DATABASE_PASSWORD = "";
+}
