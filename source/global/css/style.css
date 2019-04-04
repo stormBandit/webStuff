@@ -1,31 +1,53 @@
+.primary-color {
+    background-color: #005cbf;
+}
+
+.nav-item {
+    padding-right: 3px;
+    padding-left: 3px;
+    border-radius: 5px;
+}
+.nav-item:hover {
+    background-color: dodgerblue;
+}
+
+.nav-link {
+    color: rgba(255,255,255,1) !important;
+}
+
+.dropdown .dropdown-menu{
+    padding: .5rem;
+}
+
+.dropdown-menu a {
+    padding: 10px;
+}
+
+.dropdown-item {
+    transition: 300ms;
+}
+
+.dropdown-item:hover {
+    background-color: #005cbf;
+    color: rgba(255,255,255,1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+}
+
 /*All paragraphs will have this style*/
 p {
     font-family: "Comic Sans MS", Verdana, Arial;
     color: black;
 }
-
-/*All body's will have this style*/
-body {
-    background-color: slategrey;
-}
-
 a {
-    text-decoration: underline;
-    text-decoration-style: solid;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: skyblue;
-}
-
-/*when a link is clicked*/
-a:active {
-    color: black;
-}
-
-a:focus {
-    color: lime;
+    text-decoration: none;
 }
 
 /*Main heading style*/
@@ -62,7 +84,6 @@ a:focus {
     border: 1px solid black;
     margin: 10px;
     border-radius: 10px;
-    /*icon: url("images/icons/mainButtonIcon.png");  */
 }
 
 .mainButton:hover {

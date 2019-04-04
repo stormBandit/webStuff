@@ -21,7 +21,7 @@ services:
       - "../source:/var/www/html"
       - log-app:/var/log/myapp
     environment:
-      - IS_LOCAL=YES
+      - IS_LOCAL=YES                          # Create an environment variable 'IS_LOCAL' indicating that this is the local dev environment
       - PORT_FORWARD=8000
 #  mysql:
 #    container_name: mysql_example
