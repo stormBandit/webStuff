@@ -14,7 +14,9 @@
 		<script src="/global/js/popper.min.js"></script>
 		<script src="/global/js/bootstrap.min.js"></script>
 
-		<link rel="stylesheet" type="text/css" href="/global/css/bootstrap.min.css">
+        <script src="/global/js/script.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="/global/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="/global/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="/global/css/fontawesome.min.css">
         <link rel="stylesheet" type="text/css" href="/global/css/v4-shims.min.css">
