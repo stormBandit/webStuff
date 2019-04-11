@@ -2,12 +2,26 @@
     background-color: #005cbf;
 }
 
+/*Overwrite the default values, no idea why they would have been -15*/
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.align-left {
+    float: left;
+}
+.align-right {
+    float: right;
+}
+
 /*Navigation Bar*/
 .navbar-fixed-top {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
+    z-index: 1000;
 }
 
 .nav-item {
@@ -54,18 +68,29 @@
 
 body {
     position: relative;
-    padding-top: 60px; /*Add the height of the navbar to the top of the body, so that the nav isn't covering any content*/
 }
 h1 {
     color: #005cbf;
     margin-bottom: 16px;
 }
+/*job titles*/
+h2 {
+    color: dodgerblue;
+    margin-bottom: 15px;
+    font-size: 2.1rem;
+}
 h3 {
     color: dodgerblue;
     margin-bottom: 16px;
 }
+h4 {
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px;
+}
 hr {
     margin-top: 0;
+    margin-bottom: 32px;
     border-color: grey;
 }
 
@@ -80,7 +105,6 @@ hr {
     margin-right: 100px;
 }
 
-
 .lead-in {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -91,6 +115,7 @@ hr {
 .profile-section {
     color: #727878;
     background-color: #ffffff;
+    padding-top: 80px;
 }
 .profile-picture {
     height: 188px;
@@ -102,7 +127,7 @@ hr {
 }
 
 .education-section {
-    color: #fff;
+    color: #727878;
     background-color: lightgrey;
 }
 
@@ -110,8 +135,14 @@ hr {
     color: #727878;
     background-color: #ffffff;
 }
-
-
+.job-header {
+    padding-left: 0;
+    text-align: left;
+}
+.job-header p {
+    font-size: 16px;
+    color: #727878;
+}
 /* /Sections*/
 
 
@@ -129,179 +160,179 @@ a {
     text-decoration: none;
 }
 
-/*Main heading style*/
-#headerMain{
-    color: black;
-    font-family: "Comic Sans MS", Verdana, Arial;
-    font-align: center;
-}
+/*!*Main heading style*!*/
+/*#headerMain{*/
+    /*color: black;*/
+    /*font-family: "Comic Sans MS", Verdana, Arial;*/
+    /*font-align: center;*/
+/*}*/
 
-/*style of id 'para1' */
-#para1 {
-    font-align: center;
-    color: red;
-}
+/*!*style of id 'para1' *!*/
+/*#para1 {*/
+    /*font-align: center;*/
+    /*color: red;*/
+/*}*/
 
-/*class 'new input' location with buffering*/
-.inputWithBuffer {
-    color: black;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
+/*!*class 'new input' location with buffering*!*/
+/*.inputWithBuffer {*/
+    /*color: black;*/
+    /*margin-top: 10px;*/
+    /*margin-bottom: 10px;*/
+    /*margin-left: 10px;*/
+    /*margin-right: 10px;*/
+/*}*/
 
-/*class 'htmlarea' */
-.htmlarea {
-    background: #fff;
-    border: 1px solid #000000;
-}
+/*!*class 'htmlarea' *!*/
+/*.htmlarea {*/
+    /*background: #fff;*/
+    /*border: 1px solid #000000;*/
+/*}*/
 
-/*the main styling for important buttons*/
-.mainButton {
-    background-color: #00FFFF;
-    border: 1px solid black;
-    margin: 10px;
-    border-radius: 10px;
-}
+/*!*the main styling for important buttons*!*/
+/*.mainButton {*/
+    /*background-color: #00FFFF;*/
+    /*border: 1px solid black;*/
+    /*margin: 10px;*/
+    /*border-radius: 10px;*/
+/*}*/
 
-.mainButton:hover {
-    color: lightblue;
-    border-color: lightblue;
-    background-color: blue;
-}
+/*.mainButton:hover {*/
+    /*color: lightblue;*/
+    /*border-color: lightblue;*/
+    /*background-color: blue;*/
+/*}*/
 
-.mainButton:active {
-    color: black;
-    background-color: red;
-    border-color: black;
-}
+/*.mainButton:active {*/
+    /*color: black;*/
+    /*background-color: red;*/
+    /*border-color: black;*/
+/*}*/
 
-/*header navigation bar*/
-.headerNavBar {
-    display: flex;
-    border: 1px solid black;
-    background-color: skyblue;
-    height: 36px;
-    flex-flow: row wrap;
-    border-radius: 10px;
-}
+/*!*header navigation bar*!*/
+/*.headerNavBar {*/
+    /*display: flex;*/
+    /*border: 1px solid black;*/
+    /*background-color: skyblue;*/
+    /*height: 36px;*/
+    /*flex-flow: row wrap;*/
+    /*border-radius: 10px;*/
+/*}*/
 
-/*button in the toolbars*/
-.toolBarButton {
-    background-color: cyan;
-    border: 1px solid black;
-    text-decoration: none;
-    padding: 1em;
-    margin: 0px;
-    border-radius: 10px;
-}
+/*!*button in the toolbars*!*/
+/*.toolBarButton {*/
+    /*background-color: cyan;*/
+    /*border: 1px solid black;*/
+    /*text-decoration: none;*/
+    /*padding: 1em;*/
+    /*margin: 0px;*/
+    /*border-radius: 10px;*/
+/*}*/
 
-.toolBarButton:hover{
-    color: blue;
-    border: 2px solid blue;
-    text-decoration-color: darkblue;
-    background-color: lightblue;
-}
+/*.toolBarButton:hover{*/
+    /*color: blue;*/
+    /*border: 2px solid blue;*/
+    /*text-decoration-color: darkblue;*/
+    /*background-color: lightblue;*/
+/*}*/
 
-.toolBarButton-wrapper {
-    flex: none;
-    width: auto;
-    text-align: center;
-}
+/*.toolBarButton-wrapper {*/
+    /*flex: none;*/
+    /*width: auto;*/
+    /*text-align: center;*/
+/*}*/
 
-.mainToolBarButtons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-start: 4;
-    grid-column-end: 5;
-}
+/*.mainToolBarButtons {*/
+    /*display: grid;*/
+    /*grid-template-columns: repeat(4, 1fr);*/
+    /*grid-column-start: 4;*/
+    /*grid-column-end: 5;*/
+/*}*/
 
-/*colors can be defined by rgb function, hex value, or name (140 possible)*/
-#para2 {
-    background-color: rgb(23,76,200);
-    color: #00FFFF;
-    border-color: purple;
-}
+/*!*colors can be defined by rgb function, hex value, or name (140 possible)*!*/
+/*#para2 {*/
+    /*background-color: rgb(23,76,200);*/
+    /*color: #00FFFF;*/
+    /*border-color: purple;*/
+/*}*/
 
-/* building a pure css lightbox*/
-div.lightbox {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
+/*!* building a pure css lightbox*!*/
+/*div.lightbox {*/
+    /*display: none;*/
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/
 
-div.lightbox:target {
-    display: table;
-}
+/*div.lightbox:target {*/
+    /*display: table;*/
+/*}*/
 
-div.lightbox figure {
-    display: table-cell;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-}
+/*div.lightbox figure {*/
+    /*display: table-cell;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*vertical-align: middle;*/
+/*}*/
 
-div.lightbox figure figcaption {
-    display: block;
-    margin: auto;
-    padding: 8px;
-    background-color: #ddbbff;
-    height: 250px;
-    position: relative;
-    overflow: auto;
-    border: 1px #000000 solid;
-    border-radius: 10px;
-    text-align: justify;
-    font-size: 14px;
-}
+/*div.lightbox figure figcaption {*/
+    /*display: block;*/
+    /*margin: auto;*/
+    /*padding: 8px;*/
+    /*background-color: #ddbbff;*/
+    /*height: 250px;*/
+    /*position: relative;*/
+    /*overflow: auto;*/
+    /*border: 1px #000000 solid;*/
+    /*border-radius: 10px;*/
+    /*text-align: justify;*/
+    /*font-size: 14px;*/
+/*}*/
 
-div.lightbox figure .closeButton {
-    display: block;
-    margin: auto;
-    height: 0;
-    overflow: visible;
-    text-align: right;
-    z-index: 10; /*determine the ordering of overlapping items (higher == infront)*/
-}
+/*div.lightbox figure .closeButton {*/
+    /*display: block;*/
+    /*margin: auto;*/
+    /*height: 0;*/
+    /*overflow: visible;*/
+    /*text-align: right;*/
+    /*z-index: 10; !*determine the ordering of overlapping items (higher == infront)*!*/
+/*}*/
 
-div.lightbox figure .closeButton, div.lightbox figure figcaption {
-    width: 300px;
-}
+/*div.lightbox figure .closeButton, div.lightbox figure figcaption {*/
+    /*width: 300px;*/
+/*}*/
 
-.closeButton::after {
-    content: "\00D7";
-    display: inline-block;
-    position: relative;
-    right: -20px;
-    top: -10px;
-    z-index: 3;
-    color: #ffffff;
-    border: 1px #ffffff solid;
-    border-radius: 10px;
-    width: 20px;
-    height: 20px;
-    line-height: 18px;
-    text-align: center;
-    margin: 0;
-    background-color: #000000;
-    font-weight: bold;
-    cursor: pointer;
-}
+/*.closeButton::after {*/
+    /*content: "\00D7";*/
+    /*display: inline-block;*/
+    /*position: relative;*/
+    /*right: -20px;*/
+    /*top: -10px;*/
+    /*z-index: 3;*/
+    /*color: #ffffff;*/
+    /*border: 1px #ffffff solid;*/
+    /*border-radius: 10px;*/
+    /*width: 20px;*/
+    /*height: 20px;*/
+    /*line-height: 18px;*/
+    /*text-align: center;*/
+    /*margin: 0;*/
+    /*background-color: #000000;*/
+    /*font-weight: bold;*/
+    /*cursor: pointer;*/
+/*}*/
 
-.closeButton::before {
-    content: "";
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    opacity: 0.85;
-}
+/*.closeButton::before {*/
+    /*content: "";*/
+    /*display: block;*/
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background-color: #000000;*/
+    /*opacity: 0.85;*/
+/*}*/
